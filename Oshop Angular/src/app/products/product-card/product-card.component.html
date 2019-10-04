@@ -1,0 +1,35 @@
+
+<div class="card" *ngIf='product.title'>
+    <img [src]="product.imageUrl" class="card-img-top img-card" alt="{{ product.title }}" *ngIf='imageUrlValid && product.imageUrl'>
+    <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.price | currency:'USD' }}</p>
+    </div>
+
+    <div  *ngIf='showCard' class='card-footer'>
+     <button 
+        *ngIf='getQuantity() === 0'
+        (click)='addToCart(product)'
+        class="btn btn-secondary btn-sm btn-block">
+        Add To Card
+     </button> 
+     <div *ngIf='getQuantity() !== 0'>
+         <div class='row no-gutters'>
+             <div class='col-2'>
+                 <button 
+                 (click)='removeFromCart(product)'
+                 class='btn btn-secondary btn-block'>-</button>
+             </div>
+             <div class='col-8 text-center'>
+                {{ getQuantity() }} In Cart
+             </div>
+             <div class='col-2'>
+                 <button 
+                 (click)='addToCart(product)'
+                 class='btn btn-secondary btn-block'>+</button>
+             </div>
+         </div>
+     </div>
+    </div>
+
+</div>

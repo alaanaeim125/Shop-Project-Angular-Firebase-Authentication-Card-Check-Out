@@ -1,0 +1,128 @@
+
+<p>
+    <a routerLink='/admin/products/new' class="btn btn-primary">Add New Product</a>
+</p>
+
+<p>
+    <input #query  (keyup)='filter(query.value)' type='text' class='form-control' placeholder='Search...'>
+</p>
+
+<!-- <table class='table'>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Edit Product</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let prod of filteredProducts'>
+            <td>{{ prod.title }}</td>
+            <td>{{ prod.price }}</td>
+            <td>
+                <a class='btn btn-success btm-sm' [routerLink]="['/admin/products/', prod.key]" >Edit Product</a>
+            </td>
+        </tr>
+    </tbody>
+</table>  -->
+
+ <!-- {{ filteredProducts | json }} -->
+
+
+
+
+
+
+
+<!-- <data-table
+    [items]='items'
+    [itemCount]='itemCount'
+    (reload)='reloadItems($event)'
+>
+
+<data-table-column
+    [property]="'title'"
+    [header]="'Title'"
+    [sortable]="true"
+    [resizable]="true"
+>
+<ng-template #dataTableCell let-item="item">
+    {{ item.title }}
+</ng-template>
+
+</data-table-column>
+
+<data-table-column
+    [property]="'price'"
+    [header]="'Price'"
+    [sortable]="true"
+    [resizable]="true"
+>
+    <ng-template #dataTableCell let-item="item">
+        {{ item.price | currency:'USD': true }}
+    </ng-template>
+
+</data-table-column>
+
+
+<data-table-column
+    [property]="'key'"
+    [header]="'Edit Product'"
+>
+    <ng-template #dataTableCell let-item="item">
+        <a class='btn btn-success btm-sm' [routerLink]="['/admin/products/', item.key]" >Edit Product</a>
+    </ng-template>
+
+</data-table-column> -->
+
+
+
+
+
+
+    <table 
+        class="table table-striped table-hover"
+        [svData]="filteredProducts" 
+        #sv="svDataTable" 
+        [svRowsOnPage]="5" 
+        svSortBy="title" 
+        svSortOrder="asc"
+    >
+        <thead>
+        <tr>
+            <th>II</th>
+            <th>
+                <sv-default-sorter by="title"><i class="fa fa-sort"></i> Title</sv-default-sorter>
+            </th>
+            <th>
+                <sv-default-sorter by="price"><i class="fa fa-sort"></i> Price</sv-default-sorter>
+             </th>
+            <th>Edit Product</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr *ngFor="let item of sv.data; let i = index">
+            <td>{{(i+1)}}</td>
+            <td>{{ item.title }}</td>
+            <td>{{ item.price }}</td>
+            <td>
+              <a class='btn btn-success btn-sm btn-edit' [routerLink]="['/admin/products/', item.key]" >Edit Product</a>
+            </td>
+        </tr>
+        </tbody>
+
+        <tfoot> 
+        <tr>
+            <td colspan="4">
+                   [ {{ lenArrayProductsFiltered }} ] of [ {{ lenArrayproduct }} ] result
+                <sv-bootstrap-paginator [rowsOnPageSet]="[5, 10, 15, 20]">b</sv-bootstrap-paginator>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+
+
+
+

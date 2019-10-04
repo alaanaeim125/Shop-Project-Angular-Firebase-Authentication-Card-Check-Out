@@ -1,0 +1,74 @@
+<h1>Shopping Cart</h1>
+
+<ng-container *ngIf='cart$ | async as cart'>
+    <p>
+        You have <strong> {{ cart.shoppingCartItemsCount }} </strong>Items In Your Cart.
+
+        <button *ngIf='cart.shoppingCartItemsCount > 0' style="float: right" (click)='clearCart()' class='btn btn-light btn-sm'>Clear Shopping Cart </button>
+    </p>
+
+    <table class='table table-striped text-center table-sm'>
+        <thead class="table-primary">
+            <tr>
+                <th>II</th>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let productId of cart.productIds; let i = index'>
+                <td>{{ i + 1 }}</td>
+                <td><img class='img-thumbnail img-fluid rounded' 
+                    width='100px' height='100px' 
+                    [src]='cart.items[productId].product.imageUrl'>
+                </td>
+                <td>{{ cart.items[productId].product.title }}</td>
+                <td>
+                <!-------------------------------------->
+                <div class='row no-gutters'>
+                    <div class='col-2'>
+                        <button 
+                        (click)='removeFromCart(cart.items[productId].product)'
+                        class='btn btn-secondary btn-block'>-</button>
+                    </div>
+                    <div class='col-8 text-center'>
+                        {{ cart.items[productId].quantity }} In Cart
+                    </div>
+                    <div class='col-2'>
+                        <button 
+                        (click)='addToCart(cart.items[productId].product)'
+                        class='btn btn-secondary btn-block'>+</button>
+                    </div>
+                </div>
+                <!-------------------------------------->
+
+                </td>
+                <td>{{ cart.items[productId].product.price | currency:'USD' }}</td>
+                <td>{{ ( cart.items[productId].product.price * cart.items[productId].quantity) | currency:'USD' }}</td>
+            </tr>
+        </tbody>
+        <tfoot class="table-primary">
+            <tr>
+                <td>Total Price</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cart.totalPrice | currency:'USD'}}</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+
+        <a 
+            routerLink='/check-out'
+            *ngIf='cart.shoppingCartItemsCount > 0' 
+            class='btn btn-primary btn-sm'
+            >
+            Check Out 
+        </a>
+
+</ng-container>

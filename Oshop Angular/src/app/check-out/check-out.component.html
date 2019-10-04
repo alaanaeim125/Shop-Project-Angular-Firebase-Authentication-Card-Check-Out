@@ -1,0 +1,67 @@
+<h4>Shipping</h4>
+
+<div class='row'>
+    <div class='col-6'>
+        <form name='form' #form='ngForm' (ngSubmit)='PlaceOrder(form.value)'>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name"  name='name' #name='ngModel' ngModel
+                    aria-describedby="name" required placeholder="Enter Your Name ... ">
+                <small id="name" class="form-text text-muted">Please Write Your FullName Correctly .</small>
+            </div>
+        
+            <div class="form-group">
+                <label for="address1">Address</label>
+                <input type="text" class="form-control" name='address1' #address1='ngModel' ngModel
+                    id="address1" aria-describedby="firstaddress" required
+                    placeholder="Enter Your Address Line1 ... "> 
+                    <br>       
+                <input type="text" class="form-control" name='address2' #address2='ngModel' ngModel
+                    id="address2" aria-describedby="secondaddress" required
+                    placeholder="Enter Your Address Line2 ... ">
+                <small id="secondaddress" class="form-text text-muted">Please Write Your Address Correctly .</small>
+            </div>
+        
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" name='city' #city='ngModel' ngModel
+                aria-describedby="name" placeholder="Enter Your City ... " required>
+                <small id="city" class="form-text text-muted">Please Write Your City Correctly .</small>
+            </div>
+        
+            <button class="btn btn-primary" [disabled]='!form.valid'>Place Order ... </button>
+        </form>
+    </div>
+
+    <div class='col-6'>
+        <div *ngIf='cart$ | async as cart'>
+
+            <div class="card">
+                <h3 class='text-center alert alert-primary'>Order Summary </h3>
+                <div class="card-header">
+                    You have <strong>{{ totoalQuantityForAllProduct }}</strong> Items In your Cart .
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" *ngFor='let prodId of productIds'>
+                        {{ cart.items[prodId].quantity }} x  {{ cart.items[prodId].product.title }}
+                    <div class='float-right'>
+                            {{  cart.items[prodId].product.price | currency:'USD' }}
+                    </div>
+                    </li>
+                    <li class="list-group-item float-right"> 
+                        <strong>Total Price -></strong>
+                        <div class="float-right">
+                           <strong> {{ totoalPriceForAllProduct | currency:'USD' }}</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

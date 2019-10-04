@@ -1,0 +1,26 @@
+
+<div class='row'>
+
+    <div class='col-3'>
+        <app-product-filter [category]='category'></app-product-filter>
+    </div>
+
+    <div class='col-9'>
+        <div class="row">
+            <ng-container *ngFor='let product of filterProducts; let i = index'>
+                <div class="col-6">
+                    <app-product-card [product]='product' [shoppingCart]='cart'></app-product-card>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- {{ products$ | async | json}} -->
+<!-- {{ categories$ | async | json}} -->
