@@ -1,0 +1,295 @@
+{
+  "categories" : {
+    "animals" : {
+      "name" : "Animals"
+    },
+    "bread" : {
+      "key" : 4,
+      "name" : "Bread"
+    },
+    "dairy" : {
+      "name" : "Dairy"
+    },
+    "fruits" : {
+      "name" : "Fruits"
+    },
+    "seasonings" : {
+      "name" : "Seasonings and Spices"
+    },
+    "vegatables" : {
+      "name" : "Vegatables"
+    }
+  },
+  "orders" : {
+    "-LpO_W6trFtRVC9ed8ht" : {
+      "dateCreated" : 1569166070467,
+      "items" : [ {
+        "product" : {
+          "category" : "animals",
+          "imageUrl" : "http://www.adnetonline.org/SiteCollectionImages/2018%20pictures/ESA.jpg",
+          "key" : "-LojFJUjM5htsw9_-1N4",
+          "price" : 120,
+          "title" : "Dooooog"
+        },
+        "quantity" : 2,
+        "totalPrice" : 240
+      }, {
+        "product" : {
+          "category" : "animals",
+          "imageUrl" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-baby-animals-1558535060.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*",
+          "key" : "-LojFPmBBo_guHfetMNX",
+          "price" : 150,
+          "title" : "Couple Dog"
+        },
+        "quantity" : 2,
+        "totalPrice" : 300
+      } ],
+      "shipping" : {
+        "address1" : "",
+        "address2" : "",
+        "city" : "",
+        "name" : ""
+      },
+      "userId" : "6JWZ5fGZrLRbumMX6GRCBrfyx7t2"
+    }
+  },
+  "products" : {
+    "-KrqgOLs07ZkbapP4EGi" : {
+      "category" : "vegatables",
+      "imageUrl" : "http://www.publicdomainpictures.net/pictures/170000/velka/spinach-leaves-1461774375kTU.jpg",
+      "price" : 2,
+      "title" : "Spinach"
+    },
+    "-LogLMvIfwql1G1GiOEi" : {
+      "category" : "seasonings",
+      "imageUrl" : "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/5/17/0/WU2207_Mermaid-Ice-Cream_s4x3.jpg.rend.hgtvcom.826.620.suffix/1558112854371.jpeg",
+      "price" : 30,
+      "title" : "Vegatables IceCream"
+    },
+    "-LogLXWEGjN8TcWQpHce" : {
+      "category" : "fruits",
+      "imageUrl" : "https://soyummy.com/wp-content/uploads/2019/06/blue-bananas.jpg",
+      "price" : 20,
+      "title" : "Blue Bananas"
+    },
+    "-LojCRirrB4V6c7x1Ds5" : {
+      "category" : "vegatables",
+      "imageUrl" : "https://nordefood.eu/wp-content/uploads/2017/05/Vegetables2.jpg",
+      "price" : 12,
+      "title" : "Vegetables"
+    },
+    "-LojCY7wpgVEncimXyIT" : {
+      "category" : "fruits",
+      "imageUrl" : "http://www.studiobiosana.it/wp-content/uploads/2017/06/come-dimagrire-velocemente-frutta.png",
+      "price" : 21,
+      "title" : "dimagrire-velocement"
+    },
+    "-LojCdO_s2bRRJQRwLSB" : {
+      "category" : "vegatables",
+      "imageUrl" : "https://www.earthmarkets.com.au/wp-content/uploads/2014/04/fresh-fruits-vegetables-2419.jpg",
+      "price" : 16,
+      "title" : "fruits-vegetables"
+    },
+    "-LojCkovDTvAikB81Ef-" : {
+      "category" : "seasonings",
+      "imageUrl" : "https://www.washingtonpost.com/resizer/YXM1p2hh29iJ1SQ6iAfUEz-JzMM=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EDKTG6TE54I6RAOKXMKFSOWKUY.jpg",
+      "price" : 28,
+      "title" : "anglerfish-washpost"
+    },
+    "-LojCravNiWIQ9UZnK_H" : {
+      "category" : "vegatables",
+      "imageUrl" : "http://basketorganic.com/media/wysiwyg/blogimage/basket_organic.jpg",
+      "price" : 16,
+      "title" : "Carrots"
+    },
+    "-LojCxLnrsKSoq1fPA5p" : {
+      "category" : "vegatables",
+      "imageUrl" : "https://mambofoods.com/wp-content/uploads/2018/11/001_Mambo_Product-Images_Cali-Blend-1000x1000-WEB-1.png",
+      "price" : 20,
+      "title" : "Mambo_Product"
+    },
+    "-LojD6oK7Eg-_DxlhYaw" : {
+      "category" : "bread",
+      "imageUrl" : "https://www.snackandbakery.com/ext/resources/images/bakeryproducts.jpg?1432238179",
+      "price" : 10.5,
+      "title" : "Bakery Products"
+    },
+    "-LojDGYfcqnqhvDDdrmi" : {
+      "category" : "bread",
+      "imageUrl" : "https://monasterybakery.com/wp-content/uploads/2016/08/product1.jpg",
+      "price" : 31,
+      "title" : "Products - Monastery"
+    },
+    "-LojEDcKYk0OhgomXIZt" : {
+      "category" : "bread",
+      "imageUrl" : "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/bakeryandsnacks.com/article/2019/01/11/orkla-acquires-majority-share-of-danish-bread-based-convenience-products-supplier/9016243-1-eng-GB/Orkla-acquires-majority-share-of-Danish-bread-based-convenience-products-supplier.jpg",
+      "price" : 17,
+      "title" : "Orkla acquires"
+    },
+    "-LojERvIUioogZCTo_-d" : {
+      "category" : "bread",
+      "imageUrl" : "http://athensbaking.com/wp-content/uploads/2011/09/sqrtop_breadGroup_Web1.jpg",
+      "price" : 13.2,
+      "title" : "sqrtop breadGroup"
+    },
+    "-LojEdxYCXNTb02gOewh" : {
+      "category" : "bread",
+      "imageUrl" : "http://www.magazinebbm.com/english/wp-content/uploads/2014/12/dosya.png",
+      "price" : 15,
+      "title" : "World Bread and bakery"
+    },
+    "-LojEqi1X55rTPa6yaia" : {
+      "category" : "bread",
+      "imageUrl" : "https://previews.123rf.com/images/serg_v/serg_v1803/serg_v180300018/97646538-set-bread-baked-products-biscuits-cookies-cupcake-roll-isolated-on-white-background-.jpg",
+      "price" : 25,
+      "title" : "biscuits, cookies.."
+    },
+    "-LojF2MBeydX8NNTWwxo" : {
+      "category" : "bread",
+      "imageUrl" : "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/bakeryandsnacks.com/article/2019/01/11/orkla-acquires-majority-share-of-danish-bread-based-convenience-products-supplier/9016243-1-eng-GB/Orkla-acquires-majority-share-of-Danish-bread-based-convenience-products-supplier_wrbm_large.jpg",
+      "price" : 52,
+      "title" : "Orkla-acquires"
+    },
+    "-LojFJUjM5htsw9_-1N4" : {
+      "category" : "animals",
+      "imageUrl" : "http://www.adnetonline.org/SiteCollectionImages/2018%20pictures/ESA.jpg",
+      "price" : 120,
+      "title" : "Dooooog"
+    },
+    "-LojFPmBBo_guHfetMNX" : {
+      "category" : "animals",
+      "imageUrl" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-baby-animals-1558535060.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*",
+      "price" : 150,
+      "title" : "Couple Dog"
+    },
+    "-LojFa_LeDlctghIg5Wt" : {
+      "category" : "animals",
+      "imageUrl" : "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555275403/shape/mentalfloss/57204-istock-484968782.jpg",
+      "price" : 100,
+      "title" : "Animal the Desert ..."
+    },
+    "-LojFosbvVTFAHwLIPGK" : {
+      "category" : "animals",
+      "imageUrl" : "https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg",
+      "price" : 210,
+      "title" : "Goat"
+    },
+    "-LojFwr6YH6wL5ujjxNM" : {
+      "category" : "animals",
+      "imageUrl" : "https://www.nationalgeographic.com/content/dam/news/2016/08/20/WAQ-big-eyes/01WAQbigeyes.jpg",
+      "price" : 52,
+      "title" : "Eye MaKKe"
+    },
+    "-LojG1hlpIHRgbP9iez0" : {
+      "category" : "animals",
+      "imageUrl" : "https://www.plantbasednews.org/.image/t_share/MTY1OTMzMDk2MzQyOTIzMjEx/lion-king-animals.jpg",
+      "price" : 51,
+      "title" : "Lion King Director"
+    },
+    "-LojG9w-MUe3Fs_Es17J" : {
+      "category" : "animals",
+      "imageUrl" : "https://thumbs-prod.si-cdn.com/8Oy_eOMHnh5UIooTdnHQcW0gmug=/fit-in/1600x0/https://public-media.si-cdn.com/filer/08/7f/087fd4f3-9d69-422c-a26c-b0565990203f/bbjet3.jpg",
+      "price" : 85,
+      "title" : "Elephant"
+    },
+    "-LojGS5RMNkbTLhKgOMA" : {
+      "category" : "dairy",
+      "imageUrl" : "http://dairy-safe.com.au/wp-content/uploads/About-Dairysafe.jpg",
+      "price" : 11.5,
+      "title" : "Dairysafe"
+    },
+    "-LojGZZuUcHhkMerwGZv" : {
+      "category" : "dairy",
+      "imageUrl" : "https://naturalcave.com/wp-content/uploads/2017/01/variety-dairy-products.jpg",
+      "price" : 10,
+      "title" : "variety-dairy"
+    },
+    "-LojGnaHA7LifNS2LLdQ" : {
+      "category" : "dairy",
+      "imageUrl" : "https://assets.vogue.in/photos/5ce4256fb8031174d98f65e2/master/pass/Dairy-Clearing-the-air-on-the-good-and-the-bad-about-this-diet-staple-Vogue-India.jpg",
+      "price" : 21,
+      "title" : "Dairy-Clearing"
+    },
+    "-LojMBZkituDU1jmx3WE" : {
+      "category" : "dairy",
+      "imageUrl" : "https://walrusicecream.com/wp-content/uploads/2016/11/ice-cream-header-3-e1479852028990.jpg",
+      "price" : 51,
+      "title" : "ice-cream"
+    }
+  },
+  "shopping-carts" : {
+    "-LpI0emDrg7JAddU7hI0" : {
+      "items" : {
+        "-LojCdO_s2bRRJQRwLSB" : {
+          "product" : {
+            "category" : "vegatables",
+            "imageUrl" : "https://www.earthmarkets.com.au/wp-content/uploads/2014/04/fresh-fruits-vegetables-2419.jpg",
+            "key" : "-LojCdO_s2bRRJQRwLSB",
+            "price" : 16,
+            "title" : "fruits-vegetables"
+          },
+          "quantity" : 1
+        },
+        "-LojFPmBBo_guHfetMNX" : {
+          "product" : {
+            "category" : "animals",
+            "imageUrl" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-baby-animals-1558535060.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*",
+            "key" : "-LojFPmBBo_guHfetMNX",
+            "price" : 150,
+            "title" : "Couple Dog"
+          },
+          "quantity" : 2
+        }
+      }
+    },
+    "-LpQ59JyL03BLZyfofDZ" : {
+      "dateCreated" : 1569191404861
+    },
+    "-LpQ59RheW-5ufIHZUXG" : {
+      "dateCreated" : 1569191405357,
+      "items" : {
+        "-KrqgOLs07ZkbapP4EGi" : {
+          "product" : {
+            "category" : "vegatables",
+            "imageUrl" : "http://www.publicdomainpictures.net/pictures/170000/velka/spinach-leaves-1461774375kTU.jpg",
+            "key" : "-KrqgOLs07ZkbapP4EGi",
+            "price" : 2,
+            "title" : "Spinach"
+          },
+          "quantity" : 2
+        },
+        "-LojFJUjM5htsw9_-1N4" : {
+          "product" : {
+            "category" : "animals",
+            "imageUrl" : "http://www.adnetonline.org/SiteCollectionImages/2018%20pictures/ESA.jpg",
+            "key" : "-LojFJUjM5htsw9_-1N4",
+            "price" : 120,
+            "title" : "Dooooog"
+          },
+          "quantity" : 3
+        },
+        "-LojFPmBBo_guHfetMNX" : {
+          "product" : {
+            "category" : "animals",
+            "imageUrl" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-baby-animals-1558535060.jpg?crop=0.752xw:1.00xh;0.125xw,0&resize=640:*",
+            "key" : "-LojFPmBBo_guHfetMNX",
+            "price" : 150,
+            "title" : "Couple Dog"
+          },
+          "quantity" : 3
+        }
+      }
+    }
+  },
+  "users" : {
+    "6JWZ5fGZrLRbumMX6GRCBrfyx7t2" : {
+      "email" : "alaanaeim.iti@gmail.com",
+      "isAdmin" : true,
+      "name" : "Alaa Naeeim"
+    },
+    "n6SldoYyMFTT8sQlsFnPmX21f7o1" : {
+      "email" : "progalaa125@gmail.com",
+      "name" : "Alaa Naeeim"
+    }
+  }
+}
